@@ -1,0 +1,25 @@
+.productsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  row-gap: 40px;
+  column-gap: 40px;
+
+  .productListItem {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0 2px 4px rgba(black, 0.02);
+    border-radius: 4px;
+    overflow: hidden;
+
+    .productListItemContent {
+      padding: 20px;
+
+      h3 {
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
